@@ -1,5 +1,3 @@
-
-
 #include "esp_err.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
@@ -27,7 +25,7 @@ void app_main(void)
     servo_dog_ctrl_config_t config = {
         .fl_gpio_num = 21,
         .fr_gpio_num = 19,
-        .bl_gpio_num = 20,
+        .bl_gpio_num = 22,
         .br_gpio_num = 18,
     };
     ESP_ERROR_CHECK(servo_dog_ctrl_init(&config));
